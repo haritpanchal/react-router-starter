@@ -1,12 +1,13 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
   const params = useParams();
-  // console.log();
+
+  console.log(params.productId);
+
   return (
     <section>
-      <h2>ProductDetail</h2>
+      <h1>Product Detail</h1>
       <p>{params.productId}</p>
     </section>
   );
